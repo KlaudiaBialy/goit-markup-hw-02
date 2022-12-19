@@ -1,168 +1,164 @@
-/*
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+a:focus,
+a:hover {
+  color: var(--selection_link);
+}
 
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
+button:hover,
+button:focus {
+  color: var(--selection_button_text);
+  background-color: var(--selection_button_background);
+}
 
-/* hmm naoisz WEBstudio w wspólną klasę a potem w kolejne aby rozróżnić na top i kolor */
+button {
+  cursor: pointer;
+}
 
-.card_pagename {
+.card_mail_footer {
+  text-decoration: underline;
+}
+
+.card_link:focus,
+.card_link:hover {
+  text-decoration: underline;
+}
+
+ul a {
+  text-decoration: none;
 }
 
 .card_web {
   color: rgba(33, 150, 243, 1);
 }
 
-.card_studio_header
+.card_studio_header {
+  color: var(--pagename_text_studio_header);
+}
 
-/* Studio ? */
+.card_pagename {
+  font-size: var(--pagename_font_size);
+  font-weight: var(--pagename_font_weight);
+  line-height: var(--pagename_line_height);
+  letter-spacing: var(--pagename_letter_spacing);
+}
+
 .card_navigation {
-  width: 53px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: rgba(33, 33, 33, 1);
-  background-color: rgba(255, 255, 255, 1);
+  color: var(--navigation_text);
 }
 
-.card_mail_header {
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  background-color: rgba(255, 255, 255, 1);
+.card_mail_header .card_telephone_header {
+  color: var(--contact_header_text);
+}
+.card_navigation .card_mail_header .card_telephone_header {
+  font-size: var(--header_font_size);
+  font-weight: var(--header_font_weight);
+  line-height: var(--header_line_height);
+  letter-spacing: var(--header_letter_spacing);
 }
 
-.card_telephone_header {
-  width: 110px;
-  height: 16px;
-  left: 1263px;
-  top: 32px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-/* BODY */
-body {
-  font-family: 'Roboto', sans-serif;
-}
-button {
-  cursor: pointer;
-}
-
-.card_button:focus,
-.card_link {
-  background-color: rgba(33, 150, 243, 1);
+.card_button {
+  text-align: var(--button_text-align);
+  color: var(--botton_text);
+  font-size: var(--button_font_size);
+  font-weight: var(--button_font_weight);
+  line-height: var(--button_line_height);
+  letter-spacing: var(--button_letter-spacing);
 }
 
 .card_title {
-  width: 322px;
-  height: 36px;
-  left: 239px;
-  top: 1444px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  /* identical to box height, or 200% */
-  letter-spacing: 0.06em;
-  color: rgba(33, 33, 33, 1);
+  color: var(--title_text);
+  font-size: var(--title_font_size);
+  font-weight: var(--title_font_weight);
+  line-height: var(--title_line_height);
+  letter-spacing: var(--title_letter_spacing);
 }
 
 .card_subtitle {
-  width: 322px;
-  height: 30px;
-  left: 239px;
-  top: 1484px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
-  letter-spacing: 0.03em;
-  color: rgba(117, 117, 117, 1);
-}
-
-.card_img {
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 1130px;
-}
-
-/* FOOTER */
-.card_studio_footer {
-}
-.card_footer {
-  background-color: rgba(47, 48, 58, 1);
+  color: var(--subtitle_text);
+  font-size: var(--subtitle_font_size);
+  line-height: var(--subtitle_line_height);
+  letter-spacing: var(--subtitle_letter_spacing);
 }
 
 .card_address {
-  width: 247px;
-  height: 21px;
-  left: 215px;
-  top: 1739px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: rgb(255, 255, 255);
+  color: var(--address_text);
+}
+/* kolory dla footera nie hulają */
+.card_mail_footer .card_telephone_footer {
+  color: var(--contact_footer);
 }
 
-.card_mail_footer {
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 1769px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-  color: rgba(255, 255, 255, 0.6);
+.card_footer {
+  background-color: var(--background_footer);
 }
 
-.card_telephone_footer {
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 1799px;
-  font-family: 'Roboto';
+.data_footer {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: var (--data_font_size);
+  line-height: var(--data_line_height);
+  letter-spacing: var(--data_letter_spacing);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --pagename_text_web: rgba(33, 150, 243, 1);
+  --pagename_text_studio_header: rgba(0, 0, 0, 1);
+  --pagename_text_studio_footer: rgba(255, 255, 255, 1);
+  --navigation_text: rgba(33, 33, 33, 1);
+  --contact_header_text: rgba(117, 117, 117, 1);
+
+  --text_family_header_footer: 'Raleway';
+
+  --pagename_font_weight: 700;
+  --pagename_font_size: 26px;
+  --pagename_line_height: 1.2x;
+  --pagename_letter_spacing: 0.03em;
+
+  --header_font_weight: 500;
+  --header_font_size: 14px;
+  --header_line_height: 1.1;
+  --header_letter_spacing: 0.02em;
+
+  --botton_text: rgba(33, 33, 33, 1);
+  --button_font_weight: 500;
+  --button_font_size: 16px;
+  --button_line_height: 1.6;
+  --button_text-align: center;
+  --button_letter-spacing: 0.03em;
+
+  --title_text: rgba(33, 33, 33, 1);
+  --title_font_weight: 700;
+  --title_font_size: 18px;
+  --title_line_height: 2;
+  --title_letter_spacing: 0.06em;
+
+  --subtitle_text: rgba(117, 117, 117, 1);
+  --subtitle_font_size: 16px;
+  --subtitle_line_height: 1.9;
+  --subtitle_letter_spacing: 0.03em;
+
+  --address_text: rgba(255, 255, 255, 1);
+  --contact_footer: rgba(255, 255, 255, 0.6);
+  --background_footer: rgba(47, 48, 58, 1);
+  --data_font_size: 14px;
+  --data_line_height: 1.7;
+  --data_letter_spacing: 0.03em;
+
+  --selection_link: rgba(33, 150, 243, 1);
+  --selection_button_background: rgba(33, 150, 243, 1);
+  --selection_button_text: rgb(255, 255, 255);
+
+  --img_width: 370px;
+  --img_height: 294px;
+  --img_left: 615px;
+  --img_top: 1130px;
+}
+
+.card_img {
+  width: var(--img_width);
+  height: var(--img_height);
+  left: var(--img_left);
+  top: var(--img_top);
 }
