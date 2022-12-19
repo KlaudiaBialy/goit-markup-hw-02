@@ -11,41 +11,56 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a><span>web</span>studio</a>
+        <a class="card_pagename"
+          ><span class="card_web">web</span><span class="card_studio_header">studio</span></a
+        >
         <ul>
-          <li><a href="#">agencja</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">kontakt</a></li>
+          <li><a href="#" class="card_navigation">agencja</a></li>
+          <li><a href="#" class="card_navigation">portfolio</a></li>
+          <li><a href="#" class="card_navigation">kontakt</a></li>
         </ul>
       </nav>
       <ul>
         <li>
-          <a href="info@devstudio.com">info@devstudio.com</a>
+          <a href="info@devstudio.com" class="card_link card_mail_header">info@devstudio.com</a>
         </li>
-        <li><a href="+48111111111">+48 111 111 111</a></li>
+        <li>
+          <a href="+48111111111" class="card_link card_telephone_header">+48 111 111 111</a>
+        </li>
       </ul>
     </header>
     <main>
       <a href="./index.html">index</a>
       <section>
         <ul>
-          <li><button type="button">wszystkie</button></li>
-          <li><button type="button">strony</button></li>
-          <li><button type="button">aplikacje</button></li>
-          <li><button type="button">dizajn</button></li>
-          <li><button type="button">marketing</button></li>
+          <li>
+            <button type="button" class="card_button">wszystkie</button>
+          </li>
+          <li>
+            <button type="button" class="card_button">strony</button>
+          </li>
+          <li>
+            <button type="button" class="card_button">aplikacje</button>
+          </li>
+          <li>
+            <button type="button" class="card_button">dizajn</button>
+          </li>
+          <li>
+            <button type="button" class="card_button">marketing</button>
+          </li>
         </ul>
       </section>
       <section>
         <ul>
           <li>
             <img src="./images/laptop.jpg" alt="laptop" width="370" height="294" />
-            <h3>Technocrack</h3>
-            <p>Strona internetowa</p>
+            <h3 class="card_title">Technocrack</h3>
+            <p class="card_subtitle">Strona internetowa</p>
           </li>
           <li>
             <img
@@ -54,8 +69,8 @@
               width="370"
               height="294"
             />
-            <h3>Grafika New Orlean vs Golden Star</h3>
-            <p>Dizajn</p>
+            <h3 class="card_title">Grafika New Orlean vs Golden Star</h3>
+            <p class="card_subtitle">Dizajn</p>
           </li>
           <li>
             <img
@@ -64,34 +79,41 @@
               width="370"
               height="294"
             />
-            <h3>Restauracja Seafood</h3>
-            <p>Aplikacja</p>
+
+            <h3 class="card_title">Restauracja Seafood</h3>
+            <p class="card_subtitle">Aplikacja</p>
           </li>
           <li>
             <img src="./images/headphones.jpg" alt="headphones" width="370" height="294" />
-            <h3>Projekt Prime</h3>
-            <p>Marketing</p>
+            <h3 class="card_title">Projekt Prime</h3>
+            <p class="card_subtitle">Marketing</p>
           </li>
           <li>
             <img src="./images/boxes.jpg" alt="boxes" width="370" height="294" />
-            <h3>Projekt Boxes</h3>
-            <p>Aplikacja</p>
+            <h3 class="card_title">Projekt Boxes</h3>
+            <p class="card_subtitle">Aplikacja</p>
           </li>
 
           <li>
-            <img src="./images/monitor.jpg" alt="monitor" width="370" height="294" />
-            <h3>Inspiration has no Borders</h3>
-            <p>Strona internetowa</p>
+            <img
+              src="./images/monitor.jpg"
+              alt="monitor"
+              width="370"
+              height="294"
+              class="card_img"
+            />
+            <h3 class="card_title">Inspiration has no Borders</h3>
+            <p class="card_subtitle">Strona internetowa</p>
           </li>
           <li>
             <img src="./images/magazine.jpg" alt="magazine" width="370" height="294" />
-            <h3>Magazyn Limited Edition</h3>
-            <p>Dizajn</p>
+            <h3 class="card_title">Magazyn Limited Edition</h3>
+            <p class="card_subtitle">Dizajn</p>
           </li>
           <li>
             <img src="./images/label-tag.jpg" alt="logo label tag" width="370" height="294" />
-            <h3>Projekt LAB</h3>
-            <p>Marketing</p>
+            <h3 class="card_title">Projekt LAB</h3>
+            <p class="card_subtitle">Marketing</p>
           </li>
           <li>
             <img
@@ -100,19 +122,27 @@
               width="370"
               height="294"
             />
-            <h3>Growing Business</h3>
-            <p>Aplikacja</p>
+            <h3 class="card_title">Growing Business</h3>
+            <p class="card_subtitle">Aplikacja</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a><span>web</span>studio</a>
+    <footer class="card_footer">
+      <a class="card_pagename"
+        ><span class="card_web">web</span><span class="card_studio_footer">studio</span></a
+      >
       <address>
         <ul>
-          <li><a>m. warszawa aleje jerozolimskie 21</a></li>
-          <li><a href="info@example.com">info@example.com</a></li>
-          <li><a href="+48111111111">+48 111 111 111</a></li>
+          <li>
+            <a class="card_link card_address">m. warszawa aleje jerozolimskie 21</a>
+          </li>
+          <li>
+            <a href="info@example.com" class="card_link card_mail_footer">info@example.com</a>
+          </li>
+          <li>
+            <a href="+48111111111" class="card_link card_telephone_footer">+48 111 111 111</a>
+          </li>
         </ul>
       </address>
     </footer>

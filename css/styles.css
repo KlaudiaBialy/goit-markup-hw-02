@@ -6,9 +6,163 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+
+/* hmm naoisz WEBstudio w wspólną klasę a potem w kolejne aby rozróżnić na top i kolor */
+
+.card_pagename {
+}
+
+.card_web {
+  color: rgba(33, 150, 243, 1);
+}
+
+.card_studio_header
+
+/* Studio ? */
+.card_navigation {
+  width: 53px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: rgba(33, 33, 33, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card_mail_header {
+  width: 135px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card_telephone_header {
+  width: 110px;
+  height: 16px;
+  left: 1263px;
+  top: 32px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* BODY */
 body {
   font-family: 'Roboto', sans-serif;
 }
 button {
   cursor: pointer;
+}
+
+.card_button:focus,
+.card_link {
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.card_title {
+  width: 322px;
+  height: 36px;
+  left: 239px;
+  top: 1444px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: rgba(33, 33, 33, 1);
+}
+
+.card_subtitle {
+  width: 322px;
+  height: 30px;
+  left: 239px;
+  top: 1484px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
+  color: rgba(117, 117, 117, 1);
+}
+
+.card_img {
+  width: 370px;
+  height: 294px;
+  left: 615px;
+  top: 1130px;
+}
+
+/* FOOTER */
+.card_studio_footer {
+}
+.card_footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+
+.card_address {
+  width: 247px;
+  height: 21px;
+  left: 215px;
+  top: 1739px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255);
+}
+
+.card_mail_footer {
+  width: 231px;
+  height: 21px;
+  left: 215px;
+  top: 1769px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card_telephone_footer {
+  width: 231px;
+  height: 21px;
+  left: 215px;
+  top: 1799px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
