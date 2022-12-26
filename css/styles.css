@@ -1,132 +1,185 @@
 :root {
   --color-blue: rgba(33, 150, 243, 1);
-  --color-blach: rgba(0, 0, 0, 1);
+  --color-black: rgba(0, 0, 0, 1);
   --color-white: rgba(255, 255, 255, 1);
   --color-dark-grey: rgba(33, 33, 33, 1);
   --color-light-grey: rgba(117, 117, 117, 1);
   --color-lighter-grey: rgba(255, 255, 255, 0.6);
   --background-color: rgba(47, 48, 58, 1);
 
-  --text_family_pagename: 'Raleway';
-  --text_family: 'Roboto';
+  --text-family: 'Roboto';
 
-  --font-weight-pagename-h1-h2: 900;
+  --font-weight-900: 900;
   --font-weight-700: 700;
   --font-weight-500: 500;
   --font-weight-400: 400;
 
-  --font-size-h1: 44px;
-  --font-size-pagename: 26px;
-  --font_size-title: 18px;
-  --font-size-subtitle-button: 16px;
-  --font-size-header-data: 14p;
+  --font-size-44: 44px;
+  --font-size-36: 36px;
+  --font-size-26: 26px;
+  --font_size-18: 18px;
+  --font-size-16: 16px;
+  --font-size-14: 14p;
 }
-
-body {
-  font-family: 'Roboto', sans-serif;
+header,
+body,
+footer,
+a {
+  font-family: 'Roboto';
   font-style: normal;
-  font-size: var(--font_size-title);
+}
+.logo {
+  font-size: 26px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-26);
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.web {
+  color: var(--color-blue);
+}
+.studio__black {
+  color: var(--color-black);
+}
+.studio__white {
+  color: var(--color-white);
+}
+.header__nav__items .header__nav__links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.header__nav {
   color: var(--color-dark-grey);
-  letter-spacing: 0.06em;
 }
-
+.header_contact {
+  color: var(--color-light-grey);
+}
+.underline {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}
 a:focus,
-a:hover {
-  color: var(--selection_link);
+a:hover,
+h1:focus,
+h1:hover,
+h2:focus,
+h2:hover,
+h3:focus,
+h3:hover,
+p:focus,
+p:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-blue);
 }
-
+a:active {
+  color: var(--color-blue);
+}
 button:hover,
 button:focus {
-  color: var(--selection_button_text);
-  background-color: var(--selection_button_background);
-  border-color: var(--selection_button_background);
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
 }
-
 button {
   cursor: pointer;
 }
-
-.card_mail_footer {
-  text-decoration: underline;
+.button__main-page {
+  color: var(--color-dark-grey);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-16);
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-
-.card_link:focus,
-.card_link:hover {
-  text-decoration: underline;
+.button__portfolio {
+  color: var(--color-dark-grey);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-
-ul a {
-  text-decoration: none;
+h1 {
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-44);
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-
-.card_web {
-  color: rgba(33, 150, 243, 1);
+.background {
+  background-color: var(--background-color);
 }
-
-.card_studio_header {
-  color: var(--pagename_text_studio_header);
+.headline {
+  color: var(--color-dark-grey);
+  font-weight: var(--font-weight-700);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-
-.card_pagename {
-  font-size: var(--pagename_font_size);
-  font-weight: var(--pagename_font_weight);
-  line-height: var(--pagename_line_height);
-  letter-spacing: var(--pagename_letter_spacing);
+.headline__items {
+  color: var(--color-light-grey);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-14);
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
-
-.card_navigation {
-  color: var(--navigation_text);
+h2 {
+  color: var(--color-dark-grey);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-36);
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-
-.card_mail_header .card_telephone_header {
-  color: var(--contact_header_text);
+.team__member {
+  color: var(calor-dark-grey);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  line-height: 19px;
+  letter-spacing: 0.03em;
 }
-.card_navigation .card_mail_header .card_telephone_header {
-  font-size: var(--header_font_size);
-  font-weight: var(--header_font_weight);
-  line-height: var(--header_line_height);
-  letter-spacing: var(--header_letter_spacing);
+.team__member__position {
+  color: var(--color-light-grey);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: 19px;
+  letter-spacing: 0.03em;
 }
-
-.card_button {
-  text-align: var(--button_text-align);
-  color: var(--botton_text);
-  font-size: var(--button_font_size);
-  font-weight: var(--button_font_weight);
-  line-height: var(--button_line_height);
-  letter-spacing: var(--button_letter-spacing);
+.body__cards {
+  color: var(calor-dark-grey);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-18);
+  line-height: 36px;
+  letter-spacing: 0.06em;
 }
-
-.card_title {
-  color: var(--title_text);
-  font-size: var(--title_font_size);
-  font-weight: var(--title_font_weight);
-  line-height: var(--title_line_height);
-  letter-spacing: var(--title_letter_spacing);
+.body__cards-items {
+  color: var(--color-light-grey);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
-
-.card_subtitle {
-  color: var(--subtitle_text);
-  font-size: var(--subtitle_font_size);
-  line-height: var(--subtitle_line_height);
-  letter-spacing: var(--subtitle_letter_spacing);
+.footer__nav {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-14);
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
-
-.card_address {
-  color: var(--address_text);
+.footer__nav__address {
+  color: var(--color-white);
 }
-/* kolory dla footera nie hulają */
-.card_mail_footer .card_telephone_footer {
-  color: var(--contact_footer);
-}
-
-.card_footer {
-  background-color: var(--background_footer);
-}
-
-.data_footer {
-  font-style: normal;
-  font-size: var (--data_font_size);
-  line-height: var(--data_line_height);
-  letter-spacing: var(--data_letter_spacing);
+.footer__nav__links {
+  color: var(--color-lighter-grey) '';
 }
