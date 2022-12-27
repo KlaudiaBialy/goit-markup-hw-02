@@ -6,39 +6,21 @@
   --color-light-grey: rgba(117, 117, 117, 1);
   --color-lighter-grey: rgba(255, 255, 255, 0.6);
   --background-color: rgba(47, 48, 58, 1);
-
   --text-family: 'Roboto';
-
-  --font-weight-900: 900;
-  --font-weight-700: 700;
-  --font-weight-500: 500;
-  --font-weight-400: 400;
-
-  --font-size-44: 44px;
-  --font-size-36: 36px;
-  --font-size-26: 26px;
-  --font_size-18: 18px;
-  --font-size-16: 16px;
-  --font-size-14: 14px;
-}
-header,
-body,
-footer,
-a {
-  font-family: 'Roboto';
-  font-style: normal;
 }
 .logo {
-  font-size: 26px;
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: var(--font-weight-700);
-  font-size: var(--font-size-26);
+  font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-}
-.web {
   color: var(--color-blue);
+}
+a,
+body,
+footer {
+  font-family: 'Roboto';
+  font-style: normal;
 }
 .studio__black {
   color: var(--color-black);
@@ -47,7 +29,6 @@ a {
   color: var(--color-white);
 }
 .header__nav__items .header__nav__links {
-  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -61,23 +42,16 @@ a {
 .footer_nav {
   color: var(--color-lighter-grey);
 }
-.underline {
+.mail {
   text-decoration: underline;
 }
 a {
   text-decoration: none;
 }
-a:focus,
-a:hover,
-h1:focus,
-h1:hover,
-h2:focus,
-h2:hover,
-h3:focus,
-h3:hover,
-p:focus,
-p:hover {
-  text-decoration: underline;
+.header__nav:hover,
+.header__nav:focus,
+.header__nav__links:hover,
+.header__nav__links:focus {
   text-decoration-color: var(--color-blue);
 }
 a:active {
@@ -92,93 +66,103 @@ button:focus {
 button {
   cursor: pointer;
 }
-.button__main-page {
-  color: var(--color-dark-grey);
-  font-weight: var(--font-weight-700);
-  font-size: var(--font-size-16);
-  line-height: 30px;
-  align-items: center;
+.button__main-page,
+.button__portfolio {
+  font-size: 16px;
+  border-radius: 4px;
   text-align: center;
+  align-items: center;
+}
+.button__main-page {
+  color: var(--color-white);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  line-height: 30px;
+  display: flex;
   letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
 }
 .button__portfolio {
   color: var(--color-dark-grey);
-  font-weight: var(--font-weight-500);
-  font-size: var(--font-size-16);
   line-height: 26px;
-  text-align: center;
   letter-spacing: 0.03em;
+  width: 121px;
+  height: 38px;
+  background: rgb(245, 244, 250);
 }
 h1 {
   color: var(--color-white);
   text-transform: uppercase;
   text-align: center;
-  font-weight: var(--font-weight-700);
-  font-size: var(--font-size-44);
+  font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 .background {
   background-color: var(--background-color);
 }
+.headline,
+.headline__items,
+.footer__nav {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+h1,
+.button__main-page,
+h2,
+.body__cards,
+.logo {
+  font-weight: 700;
+}
 .headline {
   color: var(--color-dark-grey);
-  font-weight: var(--font-weight-700);
-  font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .headline__items {
   color: var(--color-light-grey);
-  font-weight: var(--font-weight-400);
-  font-size: var(--font-size-14);
   line-height: 24px;
-  letter-spacing: 0.03em;
 }
 h2 {
   color: var(--color-dark-grey);
-  font-weight: var(--font-weight-700);
-  font-size: var(--font-size-36);
+  font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team__member {
-  color: var(calor-dark-grey);
-  font-weight: var(--font-weight-500);
-  font-size: var(--font-size-16);
-  line-height: 19px;
-  letter-spacing: 0.03em;
-}
+.team__member,
 .team__member__position {
   color: var(--color-light-grey);
-  font-weight: var(--font-weight-400);
-  font-size: var(--font-size-16);
+  font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
 }
+.team__member,
+.button__portfolio,
+.header__nav__items .header__nav__links {
+  font-weight: 500;
+}
+.team__member__position,
+.footer__nav,
+.headline__items,
+.body__cards-items {
+  font-weight: 400;
+}
 .body__cards {
-  color: var(calor-dark-grey);
-  font-weight: var(--font-weight-700);
-  font-size: var(--font-size-18);
+  color: var(--color-dark-grey);
+  font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
 }
 .body__cards-items {
   color: var(--color-light-grey);
-  font-weight: var(--font-weight-400);
-  font-size: var(--font-size-16);
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
 }
 .footer__nav {
-  font-weight: var(--font-weight-400);
-  font-size: var(--font-size-14);
   line-height: 24px;
-  letter-spacing: 0.03em;
 }
 .footer__nav__address {
   color: var(--color-white);
