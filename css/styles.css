@@ -19,7 +19,7 @@
   --font-size-26: 26px;
   --font_size-18: 18px;
   --font-size-16: 16px;
-  --font-size-14: 14p;
+  --font-size-14: 14px;
 }
 header,
 body,
@@ -57,6 +57,9 @@ a {
 }
 .header_contact {
   color: var(--color-light-grey);
+}
+.footer_nav {
+  color: var(--color-lighter-grey);
 }
 .underline {
   text-decoration: underline;
