@@ -8,6 +8,17 @@
   --background-color: rgba(47, 48, 58, 1);
   --text-family: 'Roboto';
 }
+body {
+  color: var(--color-dark-grey);
+}
+a,
+li,
+button,
+h1,
+h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+}
 .logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -16,19 +27,13 @@
   letter-spacing: 0.03em;
   color: var(--color-blue);
 }
-a,
-body,
-footer {
-  font-family: 'Roboto';
-  font-style: normal;
-}
 .studio__black {
   color: var(--color-black);
 }
 .studio__white {
   color: var(--color-white);
 }
-.header__nav__items .header__nav__links {
+.header__nav-items .header__nav-links {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -48,10 +53,10 @@ footer {
 a {
   text-decoration: none;
 }
-.header__nav:hover,
-.header__nav:focus,
-.header__nav__links:hover,
-.header__nav__links:focus {
+.header__nav-items:hover,
+.header__nav-items:focus,
+.header__nav-links:hover,
+.header__nav-links:focus {
   text-decoration-color: var(--color-blue);
 }
 a:active {
@@ -73,7 +78,15 @@ button {
   text-align: center;
   align-items: center;
 }
+.button__portfolio {
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  width: 121px;
+  height: 38px;
+  background: rgb(245, 244, 250);
+}
 .button__main-page {
+  text-align: center;
   color: var(--color-white);
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -82,14 +95,6 @@ button {
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-}
-.button__portfolio {
-  color: var(--color-dark-grey);
-  line-height: 26px;
-  letter-spacing: 0.03em;
-  width: 121px;
-  height: 38px;
-  background: rgb(245, 244, 250);
 }
 h1 {
   color: var(--color-white);
@@ -116,7 +121,6 @@ h2,
   font-weight: 700;
 }
 .headline {
-  color: var(--color-dark-grey);
   line-height: 16px;
   text-transform: uppercase;
 }
@@ -125,7 +129,6 @@ h2,
   line-height: 24px;
 }
 h2 {
-  color: var(--color-dark-grey);
   font-size: 36px;
   line-height: 42px;
   text-align: center;
@@ -140,7 +143,7 @@ h2 {
 }
 .team__member,
 .button__portfolio,
-.header__nav__items .header__nav__links {
+.header__nav-items .header__nav-links {
   font-weight: 500;
 }
 .team__member__position,
@@ -150,7 +153,6 @@ h2 {
   font-weight: 400;
 }
 .body__cards {
-  color: var(--color-dark-grey);
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
@@ -164,9 +166,9 @@ h2 {
 .footer__nav {
   line-height: 24px;
 }
-.footer__nav__address {
+.footer__nav-address {
   color: var(--color-white);
 }
-.footer__nav__links {
+.footer__nav-links {
   color: var(--color-lighter-grey) '';
 }
