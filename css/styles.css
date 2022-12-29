@@ -9,13 +9,11 @@
   --text-family: 'Roboto';
 }
 body {
+  font-family: 'Roboto';
+  font-style: normal;
   color: var(--color-dark-grey);
 }
-a,
-li,
-button,
-h1,
-h2 {
+button {
   font-family: 'Roboto';
   font-style: normal;
 }
@@ -57,7 +55,7 @@ a {
 .header__nav-items:focus,
 .header__nav-links:hover,
 .header__nav-links:focus {
-  text-decoration-color: var(--color-blue);
+  color: var(--color-blue);
 }
 a:active {
   color: var(--color-blue);
@@ -86,7 +84,6 @@ button {
   background: rgb(245, 244, 250);
 }
 .button__main-page {
-  text-align: center;
   color: var(--color-white);
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
