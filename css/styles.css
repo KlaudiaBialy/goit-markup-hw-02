@@ -13,7 +13,9 @@ body {
   font-style: normal;
   color: var(--color-dark-grey);
 }
-button {
+header,
+button,
+footer {
   font-family: 'Roboto';
   font-style: normal;
 }
@@ -44,6 +46,7 @@ button {
 }
 .footer_nav {
   color: var(--color-lighter-grey);
+  font-style: normal;
 }
 .mail {
   text-decoration: underline;
