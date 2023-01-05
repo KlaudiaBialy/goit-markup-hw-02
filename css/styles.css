@@ -38,10 +38,14 @@ p {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.header__nav .team__member {
+.header__nav-links {
+  color: var(--color-light-grey);
+}
+.header__nav-items .team__member {
   color: var(--color-dark-grey);
 }
 .footer_nav {
+  font-style: normal;
   color: var(--color-lighter-grey);
 }
 .mail {
@@ -82,8 +86,8 @@ button {
 .button__portfolio {
   line-height: 26px;
   letter-spacing: 0.03em;
-  border-color: rgb(245, 244, 250, 1);
-  background: rgb(245, 244, 250, 1);
+  color: var(--color-dark-grey);
+  background: rgba(245, 244, 250, 1);
 }
 .button__main-page {
   color: var(--color-white);
